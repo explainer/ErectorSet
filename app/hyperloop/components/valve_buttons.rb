@@ -1,5 +1,5 @@
 
-  class App < Hyperloop::Component
+  class ValveButtons < Hyperloop::Component
 
     # param :my_param
     # param param_with_default: "default value"
@@ -31,9 +31,22 @@
     end
 
     def render
-      UL do
-        Navbar {}
-        Layout {}
+      UL(class: 'nav navbar-nav navbar-right') do
+        BUTTON(class: 'btn btn-primary') do
+          "Atrium"
+        end
+        BUTTON(class: 'btn btn-primary') do
+          "Back"
+        end
+        BUTTON(class: 'btn btn-primary') do
+          "Deck"
+        end
+        BUTTON(class: 'btn btn-primary') do
+          "Front"
+        end
+        BUTTON(class: 'btn btn-primary') do
+          "Tomato"
+        end
       end
     end
   end

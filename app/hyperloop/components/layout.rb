@@ -1,5 +1,5 @@
 
-  class App < Hyperloop::Component
+  class Layout < Hyperloop::Component
 
     # param :my_param
     # param param_with_default: "default value"
@@ -31,9 +31,15 @@
     end
 
     def render
-      UL do
-        Navbar {}
-        Layout {}
+      DIV(class: "container-fluid") do
+        DIV(class: "row") do
+          DIV(class: "col-sm-6") do
+            SprinkleList {}
+          end
+          DIV(class: "col-sm-6") do
+            HistoryList {}
+          end
+        end
       end
     end
   end

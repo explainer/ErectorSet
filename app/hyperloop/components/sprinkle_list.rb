@@ -1,5 +1,5 @@
 
-  class App < Hyperloop::Component
+  class SprinkleList < Hyperloop::Component
 
     # param :my_param
     # param param_with_default: "default value"
@@ -31,9 +31,8 @@
     end
 
     def render
-      UL do
-        Navbar {}
-        Layout {}
+      DIV do
+        "SprinkleList"
       end
     end
   end

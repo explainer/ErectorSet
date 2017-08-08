@@ -1,13 +1,15 @@
-# ErectorSet
+hy# ErectorSet
 This is a construction zone, used for building Hyperloop apps.
 
 So far, only the hyperloop gems have been installed, the following things have been done
 
   rails g hyper:component App
 
+  config/routes.rb was modified.
+
 then, the text was modified.
 
-Be sure to run
+Be sure to run:
 
 bundle install
 

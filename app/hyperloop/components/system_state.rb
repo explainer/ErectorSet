@@ -1,5 +1,5 @@
 
-  class App < Hyperloop::Component
+  class SystemState < Hyperloop::Component
 
     # param :my_param
     # param param_with_default: "default value"
@@ -31,9 +31,12 @@
     end
 
     def render
-      UL do
-        Navbar {}
-        Layout {}
+      UL(class: 'nav navbar-nav')  do
+        LI do
+          BUTTON(class: 'btn btn-primary') do 
+            "Standby"
+          end
+        end
       end
     end
   end
