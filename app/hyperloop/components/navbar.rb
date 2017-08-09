@@ -33,8 +33,8 @@
     def render
       NAV(class: 'navbar navbar-default') do
         DIV(class: 'container-fluid') do
-          SystemHost {}
-          SystemState {}
+          PorterState {}
+          WaterState {}
           ValveButtons {}
         end
       end

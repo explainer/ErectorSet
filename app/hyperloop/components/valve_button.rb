@@ -1,6 +1,6 @@
 
   class ValveButton < Hyperloop::Component
-
+    param :name, type: String
     # param :my_param
     # param param_with_default: "default value"
     # param :param_with_default2, default: "default value" # alternative syntax
@@ -31,9 +31,16 @@
     end
 
     def render
-      DIV do
-        "ValveButton"
+      BUTTON(class: 'btn btn-primary') do
+        "#{params.name}"
       end
     end
   end
 
+# class SayHelloTo < Hyperloop::Component
+#   param :name, type: String
+
+#   render(DIV) do
+#     H4 { "Hello #{params.name}!" }
+#   end
+# end

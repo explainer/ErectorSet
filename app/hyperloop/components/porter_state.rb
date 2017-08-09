@@ -1,5 +1,5 @@
 
-  class SystemHost < Hyperloop::Component
+  class PorterState < Hyperloop::Component
 
     # param :my_param
     # param param_with_default: "default value"
@@ -13,8 +13,9 @@
     # call backs may also reference an instance method i.e. before_mount :my_method
 
     before_mount do
-      # any initialization particularly of state variables goes here.
-      # this will execute on server (prerendering) and client.
+      #
+      # make http get request on Porter here
+      #
     end
 
     after_mount do

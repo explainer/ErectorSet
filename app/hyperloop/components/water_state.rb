@@ -1,5 +1,5 @@
 
-  class SystemState < Hyperloop::Component
+  class WaterState < Hyperloop::Component
 
     # param :my_param
     # param param_with_default: "default value"

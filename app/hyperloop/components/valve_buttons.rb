@@ -47,6 +47,9 @@
         BUTTON(class: 'btn btn-primary') do
           "Tomato"
         end
+        # ["Atrium", "Back","Deck","Front","Tomato"].each do |name|
+        #   ValveButton({name: name})
+        # end
       end
     end
   end
