@@ -1,4 +1,4 @@
-hy# ErectorSet
+# ErectorSet
 This is a construction zone, used for building Hyperloop apps.
 
 So far, only the hyperloop gems have been installed, the following things have been done

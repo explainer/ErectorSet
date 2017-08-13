@@ -1,5 +1,5 @@
 
-  class PorterState < Hyperloop::Component
+  class WaterStatus < Hyperloop::Component
 
     # param :my_param
     # param param_with_default: "default value"
@@ -13,9 +13,8 @@
     # call backs may also reference an instance method i.e. before_mount :my_method
 
     before_mount do
-      #
-      # make http get request on Porter here
-      #
+      # any initialization particularly of state variables goes here.
+      # this will execute on server (prerendering) and client.
     end
 
     after_mount do
@@ -32,9 +31,11 @@
     end
 
     def render
-      NAV(class: 'navbar-header') do
-        PRE do
-          "localhost:3000      "
+      UL(class: 'nav navbar-nav')  do
+        LI do
+          BUTTON(class: 'btn btn-primary') do 
+            "Standby"
+          end
         end
       end
     end

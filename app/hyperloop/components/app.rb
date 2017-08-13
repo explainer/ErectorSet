@@ -20,6 +20,7 @@
     after_mount do
       # any client only post rendering initialization goes here.
       # i.e. start timers, HTTP requests, and low level jquery operations etc.
+      PorterActionServer.run()
     end
 
     before_update do

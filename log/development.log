@@ -1,460 +1,382 @@
-  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[35m (7.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
-  [1m[35m (18.7ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
-  [1m[35m (5.8ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
-  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
-Started GET "/" for 127.0.0.1 at 2017-08-08 12:12:40 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
-  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '269fe26d-73b8-4af8-92a3-45ba517ecbe6-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '269fe26d-73b8-4af8-92a3-45ba517ecbe6-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-08 19:12:41', '2017-08-08 19:12:51')[0m
-  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1584.7ms)
-Completed 200 OK in 2944ms (Views: 2931.2ms | ActiveRecord: 6.9ms)
-
-
-Started GET "/" for 127.0.0.1 at 2017-08-08 12:17:45 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '41650793-64c5-422e-bc87-3ead484b3a00-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '41650793-64c5-422e-bc87-3ead484b3a00-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-08 19:17:56', '2017-08-08 19:18:06')[0m
-  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1116.1ms)
-Completed 200 OK in 1674ms (Views: 1669.7ms | ActiveRecord: 3.5ms)
-
-
-Started GET "/" for 127.0.0.1 at 2017-08-08 12:18:24 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.2ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'da6affe3-15a5-419a-916b-e2eac0c3b747-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'da6affe3-15a5-419a-916b-e2eac0c3b747-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-08 19:18:25', '2017-08-08 19:18:35')[0m
-  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1056.2ms)
-Completed 200 OK in 1594ms (Views: 1590.4ms | ActiveRecord: 3.1ms)
-
-
-Started GET "/" for 127.0.0.1 at 2017-08-08 12:23:18 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.2ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '646b97ff-5345-4310-9800-3303c66fef4b-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '646b97ff-5345-4310-9800-3303c66fef4b-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-08 19:23:19', '2017-08-08 19:23:29')[0m
-  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1150.3ms)
-Completed 200 OK in 1712ms (Views: 1706.4ms | ActiveRecord: 5.1ms)
-
-
-Started GET "/" for 127.0.0.1 at 2017-08-08 12:23:46 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.4ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'cb170509-dce1-40f0-96ef-7972efeec40d-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'cb170509-dce1-40f0-96ef-7972efeec40d-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-08 19:23:47', '2017-08-08 19:23:57')[0m
-  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1101.0ms)
-Completed 200 OK in 1647ms (Views: 1640.8ms | ActiveRecord: 5.1ms)
-
-
-Started GET "/" for 127.0.0.1 at 2017-08-08 12:25:33 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'be58b13b-4bf6-49a2-abed-81f75133ee6a-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'be58b13b-4bf6-49a2-abed-81f75133ee6a-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-08 19:25:34', '2017-08-08 19:25:44')[0m
-  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1096.9ms)
-Completed 200 OK in 1661ms (Views: 1652.8ms | ActiveRecord: 7.4ms)
-
-
-Started GET "/" for 127.0.0.1 at 2017-08-08 12:29:52 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '52e33b28-f276-4a2c-87d2-ea36b3437103-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '52e33b28-f276-4a2c-87d2-ea36b3437103-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-08 19:29:53', '2017-08-08 19:30:03')[0m
-  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1031.0ms)
-Completed 200 OK in 1583ms (Views: 1577.2ms | ActiveRecord: 4.8ms)
-
-
-  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
-  [1m[35m (347.6ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
-  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
-  [1m[35m (348.1ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
-  [1m[35m (278.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
-  [1m[35m (319.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT GET_LOCK(507585790364384445, 0)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (29.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `ErectorSet_development`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `ErectorSet_test`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
+  [1m[35m (21.0ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
+  [1m[35m (17.5ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (15.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK(507585790364384445, 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePorters (20170811155512)
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE `porters` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `host_name` varchar(255), `port_number` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170811155512')[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `hyperloop_connections`.`channel` FROM `hyperloop_connections`[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (16.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-08-08 21:22:14', '2017-08-08 21:22:14')[0m
-  [1m[35m (48.3ms)[0m  [1m[35mCOMMIT[0m
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK(507585790364384445)[0m
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
-  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-08-12 15:16:35', '2017-08-12 15:16:35')[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(507585790364384445)[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
-  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
   [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[35m (800.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `ErectorSet_development`[0m
-  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[35m (39.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `ErectorSet_test`[0m
-  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
-  [1m[35m (284.9ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
-  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
-  [1m[35m (336.4ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
-  [1m[35m (322.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
-  [1m[35m (331.3ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK(507585790364384445, 0)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+Started GET "/" for 127.0.0.1 at 2017-08-12 08:16:51 -0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'b1a15b62-a9c8-4b1a-90ea-78cd094fbccc-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'b1a15b62-a9c8-4b1a-90ea-78cd094fbccc-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 15:16:52', '2017-08-12 15:17:02')[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1652.7ms)
+Completed 200 OK in 3287ms (Views: 3273.0ms | ActiveRecord: 8.6ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/" for 127.0.0.1 at 2017-08-12 08:28:19 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mHyperloop::Connection Load (0.4ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '9f8d7b68-e646-497e-ac7d-7ab0968ef74f-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '9f8d7b68-e646-497e-ac7d-7ab0968ef74f-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 15:28:30', '2017-08-12 15:28:40')[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1236.8ms)
+Completed 200 OK in 2011ms (Views: 2006.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-12 08:29:09 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '1b135469-5031-4fa7-b42b-e38e387aa3cf-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '1b135469-5031-4fa7-b42b-e38e387aa3cf-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 15:29:10', '2017-08-12 15:29:20')[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1284.9ms)
+Completed 200 OK in 1896ms (Views: 1890.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-12 08:29:28 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '96867e1b-4ffc-4dc1-bb7b-7ffdc8671d6b-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '96867e1b-4ffc-4dc1-bb7b-7ffdc8671d6b-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 15:29:29', '2017-08-12 15:29:39')[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1280.1ms)
+Completed 200 OK in 1951ms (Views: 1944.4ms | ActiveRecord: 6.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPorter Load (0.2ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` ORDER BY `porters`.`id` ASC LIMIT 1[0m
+Started GET "/" for 127.0.0.1 at 2017-08-12 08:33:11 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.2ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '9424c7d1-0c1e-4863-9ac0-f4144e1af5f9-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-08-08 21:22:55', '2017-08-08 21:22:55')[0m
-  [1m[35m (46.7ms)[0m  [1m[35mCOMMIT[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK(507585790364384445)[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
-  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
-  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[35m (180.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
-  [1m[35m (312.3ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
-  [1m[35m (180.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
-  [1m[35m (279.3ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
-Started GET "/" for 127.0.0.1 at 2017-08-08 14:24:06 -0700
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '9424c7d1-0c1e-4863-9ac0-f4144e1af5f9-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 15:33:12', '2017-08-12 15:33:22')[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1295.9ms)
+Completed 200 OK in 1909ms (Views: 1903.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/__OPAL_SOURCE_MAPS__/models/application_record.self.map" for 127.0.0.1 at 2017-08-12 08:33:38 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/models/porter.self.map" for 127.0.0.1 at 2017-08-12 08:33:38 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/components/porter_status.self.map" for 127.0.0.1 at 2017-08-12 08:33:38 -0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (7.0ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (5.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
+Started GET "/" for 127.0.0.1 at 2017-08-12 12:06:17 -0700
 Processing by HyperloopController#app as HTML
   Rendering inline template within layouts/application
-  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'eda4b7e0-dc6d-4948-8eb6-8eac2c083a26-92fbcac00658cf4ac87ae0371a76e301' LIMIT 1[0m
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'eda4b7e0-dc6d-4948-8eb6-8eac2c083a26-92fbcac00658cf4ac87ae0371a76e301', '2017-08-08 21:24:08', '2017-08-08 21:24:18')[0m
-  [1m[35m (62.1ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (2418.6ms)
-Completed 200 OK in 5688ms (Views: 5609.7ms | ActiveRecord: 65.4ms)
+  [1m[36mHyperloop::Connection Load (1.5ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'eca3f836-1369-42e9-aaeb-25d1103dc9a1-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'eca3f836-1369-42e9-aaeb-25d1103dc9a1-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 19:06:19', '2017-08-12 19:06:29')[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1962.6ms)
+Completed 200 OK in 3783ms (Views: 3771.1ms | ActiveRecord: 11.8ms)
 
 
-Started GET "/" for 127.0.0.1 at 2017-08-08 15:38:16 -0700
+Started GET "/" for 127.0.0.1 at 2017-08-12 12:06:51 -0700
 Processing by HyperloopController#app as HTML
   Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.4ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'a70ced87-15c9-496a-9c1e-1d80f88fcc67-92fbcac00658cf4ac87ae0371a76e301' LIMIT 1[0m
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'a70ced87-15c9-496a-9c1e-1d80f88fcc67-92fbcac00658cf4ac87ae0371a76e301', '2017-08-08 22:38:27', '2017-08-08 22:38:37')[0m
-  [1m[35m (91.0ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1719.5ms)
-Completed 200 OK in 2537ms (Views: 2443.8ms | ActiveRecord: 92.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2017-08-08 17:40:21 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
-  Rendered inline template within layouts/application (298.3ms)
-Completed 500 Internal Server Error in 302ms (ActiveRecord: 0.0ms)
-
-
-  
-SyntaxError (An error occurred while compiling: components/valve_buttons
-
-parse error on value "name" (tLABEL) :components/valve_buttons:51
-Source: components/valve_buttons:51:27
-          ValveButton{name: name}
-~~~~~~~~~~~~~~~~~~~~~~~~~~^):
-  
-An error occurred while compiling: components/valve_buttons
-
-parse error on value "name" (tLABEL) :components/valve_buttons:51
-Source: components/valve_buttons:51:27
-          ValveButton{name: name}
-~~~~~~~~~~~~~~~~~~~~~~~~~~^
-opal (0.10.5) lib/opal/parser.rb:82:in `on_error'
-/home/kenb/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/racc/parser.rb:259:in `_racc_do_parse_c'
-/home/kenb/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/racc/parser.rb:259:in `do_parse'
-opal (0.10.5) lib/opal/parser.rb:54:in `parse_to_sexp'
-opal (0.10.5) lib/opal/parser.rb:39:in `parse'
-opal (0.10.5) lib/opal/compiler.rb:152:in `compile'
-opal (0.10.5) lib/opal/sprockets/processor.rb:46:in `evaluate'
-tilt (2.0.8) lib/tilt/template.rb:109:in `render'
-sprockets (3.7.1) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
-sprockets (3.7.1) lib/sprockets/processor_utils.rb:75:in `call_processor'
-sprockets (3.7.1) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
-sprockets (3.7.1) lib/sprockets/processor_utils.rb:56:in `reverse_each'
-sprockets (3.7.1) lib/sprockets/processor_utils.rb:56:in `call_processors'
-sprockets (3.7.1) lib/sprockets/loader.rb:134:in `load_from_unloaded'
-sprockets (3.7.1) lib/sprockets/loader.rb:60:in `block in load'
-sprockets (3.7.1) lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
-sprockets (3.7.1) lib/sprockets/loader.rb:44:in `load'
-sprockets (3.7.1) lib/sprockets/cached_environment.rb:20:in `block in initialize'
-sprockets (3.7.1) lib/sprockets/cached_environment.rb:47:in `load'
-sprockets (3.7.1) lib/sprockets/bundle.rb:23:in `block in call'
-sprockets (3.7.1) lib/sprockets/utils.rb:200:in `dfs'
-sprockets (3.7.1) lib/sprockets/bundle.rb:24:in `call'
-sprockets (3.7.1) lib/sprockets/processor_utils.rb:75:in `call_processor'
-sprockets (3.7.1) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
-sprockets (3.7.1) lib/sprockets/processor_utils.rb:56:in `reverse_each'
-sprockets (3.7.1) lib/sprockets/processor_utils.rb:56:in `call_processors'
-sprockets (3.7.1) lib/sprockets/loader.rb:134:in `load_from_unloaded'
-sprockets (3.7.1) lib/sprockets/loader.rb:60:in `block in load'
-sprockets (3.7.1) lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
-sprockets (3.7.1) lib/sprockets/loader.rb:44:in `load'
-sprockets (3.7.1) lib/sprockets/cached_environment.rb:20:in `block in initialize'
-sprockets (3.7.1) lib/sprockets/cached_environment.rb:47:in `load'
-sprockets (3.7.1) lib/sprockets/base.rb:66:in `find_asset'
-sprockets (3.7.1) lib/sprockets/environment.rb:30:in `find_asset'
-sprockets (3.7.1) lib/sprockets/base.rb:92:in `[]'
-react-rails (1.9.0) lib/react/server_rendering/environment_container.rb:14:in `find_asset'
-react-rails (1.9.0) lib/react/server_rendering/sprockets_renderer.rb:23:in `block in initialize'
-react-rails (1.9.0) lib/react/server_rendering/sprockets_renderer.rb:22:in `each'
-react-rails (1.9.0) lib/react/server_rendering/sprockets_renderer.rb:22:in `initialize'
-hyper-react (0.12.7) lib/reactive-ruby/server_rendering/contextual_renderer.rb:14:in `initialize'
-react-rails (1.9.0) lib/react/server_rendering.rb:22:in `new'
-react-rails (1.9.0) lib/react/server_rendering.rb:22:in `create_renderer'
-react-rails (1.9.0) lib/react/server_rendering.rb:12:in `block in reset_pool'
-connection_pool (2.2.1) lib/connection_pool/timed_stack.rb:170:in `try_create'
-connection_pool (2.2.1) lib/connection_pool/timed_stack.rb:82:in `block (2 levels) in pop'
-connection_pool (2.2.1) lib/connection_pool/timed_stack.rb:78:in `loop'
-connection_pool (2.2.1) lib/connection_pool/timed_stack.rb:78:in `block in pop'
-connection_pool (2.2.1) lib/connection_pool/timed_stack.rb:77:in `synchronize'
-connection_pool (2.2.1) lib/connection_pool/timed_stack.rb:77:in `pop'
-connection_pool (2.2.1) lib/connection_pool.rb:89:in `checkout'
-connection_pool (2.2.1) lib/connection_pool.rb:61:in `block in with'
-connection_pool (2.2.1) lib/connection_pool.rb:60:in `handle_interrupt'
-connection_pool (2.2.1) lib/connection_pool.rb:60:in `with'
-react-rails (1.9.0) lib/react/server_rendering.rb:16:in `render'
-react-rails (1.9.0) lib/react/rails/component_mount.rb:33:in `block in react_component'
-actionview (5.1.3) lib/action_view/helpers/capture_helper.rb:39:in `block in capture'
-actionview (5.1.3) lib/action_view/helpers/capture_helper.rb:203:in `with_output_buffer'
-haml (5.0.2) lib/haml/helpers/action_view_xss_mods.rb:6:in `with_output_buffer_with_haml_xss'
-actionview (5.1.3) lib/action_view/helpers/capture_helper.rb:39:in `capture'
-haml (5.0.2) lib/haml/helpers/action_view_mods.rb:47:in `capture_with_haml'
-actionview (5.1.3) lib/action_view/helpers/tag_helper.rb:272:in `content_tag'
-haml (5.0.2) lib/haml/helpers/action_view_mods.rb:56:in `content_tag_with_haml'
-react-rails (1.9.0) lib/react/rails/component_mount.rb:48:in `react_component'
-hyper-react (0.12.7) lib/reactive-ruby/rails/component_mount.rb:13:in `react_component'
-react-rails (1.9.0) lib/react/rails/view_helper.rb:21:in `react_component'
-inline template:1:in `_inline_template___209941633712354492_103359880'
-actionview (5.1.3) lib/action_view/template.rb:157:in `block in render'
-activesupport (5.1.3) lib/active_support/notifications.rb:168:in `instrument'
-actionview (5.1.3) lib/action_view/template.rb:352:in `instrument_render_template'
-actionview (5.1.3) lib/action_view/template.rb:155:in `render'
-actionview (5.1.3) lib/action_view/renderer/template_renderer.rb:52:in `block (2 levels) in render_template'
-actionview (5.1.3) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
-activesupport (5.1.3) lib/active_support/notifications.rb:166:in `block in instrument'
-activesupport (5.1.3) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
-activesupport (5.1.3) lib/active_support/notifications.rb:166:in `instrument'
-actionview (5.1.3) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
-actionview (5.1.3) lib/action_view/renderer/template_renderer.rb:51:in `block in render_template'
-actionview (5.1.3) lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
-actionview (5.1.3) lib/action_view/renderer/template_renderer.rb:50:in `render_template'
-actionview (5.1.3) lib/action_view/renderer/template_renderer.rb:14:in `render'
-actionview (5.1.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
-actionview (5.1.3) lib/action_view/renderer/renderer.rb:23:in `render'
-actionview (5.1.3) lib/action_view/rendering.rb:103:in `_render_template'
-actionpack (5.1.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
-actionview (5.1.3) lib/action_view/rendering.rb:83:in `render_to_body'
-actionpack (5.1.3) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
-actionpack (5.1.3) lib/action_controller/metal/renderers.rb:141:in `render_to_body'
-actionpack (5.1.3) lib/abstract_controller/rendering.rb:24:in `render'
-actionpack (5.1.3) lib/action_controller/metal/rendering.rb:36:in `render'
-actionpack (5.1.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
-activesupport (5.1.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
-/home/kenb/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/benchmark.rb:308:in `realtime'
-activesupport (5.1.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
-actionpack (5.1.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
-actionpack (5.1.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
-activerecord (5.1.3) lib/active_record/railties/controller_runtime.rb:29:in `cleanup_view_runtime'
-actionpack (5.1.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
-hyper-react (0.12.7) lib/reactive-ruby/rails/controller_helper.rb:10:in `render_component'
-hyper-react (0.12.7) lib/reactive-ruby/rails/railtie.rb:27:in `action_missing'
-actionpack (5.1.3) lib/abstract_controller/base.rb:200:in `_handle_action_missing'
-actionpack (5.1.3) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
-actionpack (5.1.3) lib/abstract_controller/base.rb:186:in `process_action'
-actionpack (5.1.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
-actionpack (5.1.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
-activesupport (5.1.3) lib/active_support/callbacks.rb:131:in `run_callbacks'
-actionpack (5.1.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
-actionpack (5.1.3) lib/action_controller/metal/rescue.rb:20:in `process_action'
-actionpack (5.1.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
-activesupport (5.1.3) lib/active_support/notifications.rb:166:in `block in instrument'
-activesupport (5.1.3) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
-activesupport (5.1.3) lib/active_support/notifications.rb:166:in `instrument'
-actionpack (5.1.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
-actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
-activerecord (5.1.3) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
-actionpack (5.1.3) lib/abstract_controller/base.rb:124:in `process'
-actionview (5.1.3) lib/action_view/rendering.rb:30:in `process'
-actionpack (5.1.3) lib/action_controller/metal.rb:189:in `dispatch'
-actionpack (5.1.3) lib/action_controller/metal.rb:253:in `dispatch'
-actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
-actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:31:in `serve'
-actionpack (5.1.3) lib/action_dispatch/journey/router.rb:46:in `block in serve'
-actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `each'
-actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `serve'
-actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
-rack (2.0.3) lib/rack/etag.rb:25:in `call'
-rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
-rack (2.0.3) lib/rack/head.rb:12:in `call'
-rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
-rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
-actionpack (5.1.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
-activerecord (5.1.3) lib/active_record/migration.rb:556:in `call'
-actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
-activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
-actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
-actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
-web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
-web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
-web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
-actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
-railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
-railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
-activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
-activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
-activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
-railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
-hyper-operation (0.5.11) lib/hyper-operation/transport/hyperloop_controller.rb:25:in `call'
-sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
-actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
-rack (2.0.3) lib/rack/method_override.rb:22:in `call'
-rack (2.0.3) lib/rack/runtime.rb:22:in `call'
-activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
-actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
-actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
-rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
-railties (5.1.3) lib/rails/engine.rb:522:in `call'
-puma (3.9.1) lib/puma/configuration.rb:224:in `call'
-puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
-puma (3.9.1) lib/puma/server.rb:435:in `process_client'
-puma (3.9.1) lib/puma/server.rb:299:in `block in run'
-puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
-Started GET "/" for 127.0.0.1 at 2017-08-08 17:44:01 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.4ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '9a66e7aa-add6-4c73-a741-09de00f7bf1e-92fbcac00658cf4ac87ae0371a76e301' LIMIT 1[0m
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '9a66e7aa-add6-4c73-a741-09de00f7bf1e-92fbcac00658cf4ac87ae0371a76e301', '2017-08-09 00:44:03', '2017-08-09 00:44:13')[0m
-  [1m[35m (82.0ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1556.6ms)
-Completed 200 OK in 2313ms (Views: 2229.2ms | ActiveRecord: 82.8ms)
-
-
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_buttons.self.map" for 127.0.0.1 at 2017-08-08 17:44:12 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_button.self.map" for 127.0.0.1 at 2017-08-08 17:44:12 -0700
-Started GET "/" for 127.0.0.1 at 2017-08-08 17:47:42 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'fd2656ee-8e2d-4a3f-b6f3-baffd34b41f4-92fbcac00658cf4ac87ae0371a76e301' LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.2ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '77f0a3e7-a2bd-4860-9640-c6c4c4a3eb9f-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'fd2656ee-8e2d-4a3f-b6f3-baffd34b41f4-92fbcac00658cf4ac87ae0371a76e301', '2017-08-09 00:47:44', '2017-08-09 00:47:54')[0m
-  [1m[35m (81.8ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1617.9ms)
-Completed 200 OK in 2301ms (Views: 2218.1ms | ActiveRecord: 82.3ms)
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '77f0a3e7-a2bd-4860-9640-c6c4c4a3eb9f-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 19:07:02', '2017-08-12 19:07:12')[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1266.9ms)
+Completed 200 OK in 1918ms (Views: 1912.2ms | ActiveRecord: 5.2ms)
 
 
-Started GET "/__OPAL_SOURCE_MAPS__/components/app.self.map" for 127.0.0.1 at 2017-08-08 17:47:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/history_list.self.map" for 127.0.0.1 at 2017-08-08 17:47:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/layout.self.map" for 127.0.0.1 at 2017-08-08 17:47:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_button.self.map" for 127.0.0.1 at 2017-08-08 17:47:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_buttons.self.map" for 127.0.0.1 at 2017-08-08 17:47:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/navbar.self.map" for 127.0.0.1 at 2017-08-08 17:47:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/sprinkle_list.self.map" for 127.0.0.1 at 2017-08-08 17:47:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/system_host.self.map" for 127.0.0.1 at 2017-08-08 17:47:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/hyperloop-loader-application.self.map" for 127.0.0.1 at 2017-08-08 17:47:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/system_state.self.map" for 127.0.0.1 at 2017-08-08 17:47:46 -0700
-Started GET "/" for 127.0.0.1 at 2017-08-08 17:48:39 -0700
+Started GET "/" for 127.0.0.1 at 2017-08-12 12:11:21 -0700
 Processing by HyperloopController#app as HTML
   Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.4ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'fee5b2e7-c6b9-42cd-ac1a-7ec5ecedd7ee-92fbcac00658cf4ac87ae0371a76e301' LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '323aa2fe-f00e-4d88-8b93-941e813cfb9a-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'fee5b2e7-c6b9-42cd-ac1a-7ec5ecedd7ee-92fbcac00658cf4ac87ae0371a76e301', '2017-08-09 00:48:40', '2017-08-09 00:48:50')[0m
-  [1m[35m (39.7ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1316.4ms)
-Completed 200 OK in 2009ms (Views: 1968.2ms | ActiveRecord: 40.5ms)
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '323aa2fe-f00e-4d88-8b93-941e813cfb9a-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 19:11:22', '2017-08-12 19:11:32')[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1237.0ms)
+Completed 200 OK in 1894ms (Views: 1887.9ms | ActiveRecord: 5.1ms)
 
 
-Started GET "/__OPAL_SOURCE_MAPS__/components/app.self.map" for 127.0.0.1 at 2017-08-08 17:48:42 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/history_list.self.map" for 127.0.0.1 at 2017-08-08 17:48:42 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_buttons.self.map" for 127.0.0.1 at 2017-08-08 17:48:42 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/layout.self.map" for 127.0.0.1 at 2017-08-08 17:48:42 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/navbar.self.map" for 127.0.0.1 at 2017-08-08 17:48:42 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_button.self.map" for 127.0.0.1 at 2017-08-08 17:48:42 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/sprinkle_list.self.map" for 127.0.0.1 at 2017-08-08 17:48:42 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/hyperloop-loader-application.self.map" for 127.0.0.1 at 2017-08-08 17:48:42 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/system_host.self.map" for 127.0.0.1 at 2017-08-08 17:48:42 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/system_state.self.map" for 127.0.0.1 at 2017-08-08 17:48:42 -0700
-Started GET "/" for 127.0.0.1 at 2017-08-08 17:50:19 -0700
+Started GET "/" for 127.0.0.1 at 2017-08-12 12:12:01 -0700
 Processing by HyperloopController#app as HTML
   Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.4ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '296bf134-05be-4bed-bd1f-d33ffea948ae-92fbcac00658cf4ac87ae0371a76e301' LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.2ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'dbaa7547-9400-48ab-8e54-6fbab0e841f4-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '296bf134-05be-4bed-bd1f-d33ffea948ae-92fbcac00658cf4ac87ae0371a76e301', '2017-08-09 00:50:21', '2017-08-09 00:50:31')[0m
-  [1m[35m (86.8ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1511.6ms)
-Completed 200 OK in 2223ms (Views: 2134.4ms | ActiveRecord: 87.8ms)
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'dbaa7547-9400-48ab-8e54-6fbab0e841f4-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 19:12:02', '2017-08-12 19:12:12')[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1198.4ms)
+Completed 200 OK in 1883ms (Views: 1877.3ms | ActiveRecord: 5.5ms)
 
 
-Started GET "/__OPAL_SOURCE_MAPS__/components/app.self.map" for 127.0.0.1 at 2017-08-08 17:50:22 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/history_list.self.map" for 127.0.0.1 at 2017-08-08 17:50:22 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_buttons.self.map" for 127.0.0.1 at 2017-08-08 17:50:22 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_button.self.map" for 127.0.0.1 at 2017-08-08 17:50:22 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/layout.self.map" for 127.0.0.1 at 2017-08-08 17:50:22 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/sprinkle_list.self.map" for 127.0.0.1 at 2017-08-08 17:50:22 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/navbar.self.map" for 127.0.0.1 at 2017-08-08 17:50:22 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/system_host.self.map" for 127.0.0.1 at 2017-08-08 17:50:22 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/hyperloop-loader-application.self.map" for 127.0.0.1 at 2017-08-08 17:50:22 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/system_state.self.map" for 127.0.0.1 at 2017-08-08 17:50:22 -0700
-Started GET "/" for 127.0.0.1 at 2017-08-08 19:57:25 -0700
+Started GET "/" for 127.0.0.1 at 2017-08-12 12:20:36 -0700
 Processing by HyperloopController#app as HTML
   Rendering inline template within layouts/application
-  [1m[36mHyperloop::Connection Load (0.4ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'd7df00de-c848-4303-a458-2553316d764e-92fbcac00658cf4ac87ae0371a76e301' LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.2ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '927c8b89-64c0-4bf6-bc33-e2948fef20a4-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '927c8b89-64c0-4bf6-bc33-e2948fef20a4-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 19:20:38', '2017-08-12 19:20:48')[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1290.8ms)
+Completed 200 OK in 1959ms (Views: 1955.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-12 12:25:52 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.2ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '9370daa4-3af2-4ffd-8ab2-5dd4470b589e-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'd7df00de-c848-4303-a458-2553316d764e-92fbcac00658cf4ac87ae0371a76e301', '2017-08-09 02:57:26', '2017-08-09 02:57:36')[0m
-  [1m[35m (45.5ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (1487.6ms)
-Completed 200 OK in 2230ms (Views: 2182.8ms | ActiveRecord: 46.5ms)
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '9370daa4-3af2-4ffd-8ab2-5dd4470b589e-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 19:25:53', '2017-08-12 19:26:03')[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1383.5ms)
+Completed 200 OK in 2047ms (Views: 2039.8ms | ActiveRecord: 6.4ms)
 
 
-Started GET "/__OPAL_SOURCE_MAPS__/components/app.self.map" for 127.0.0.1 at 2017-08-08 19:57:27 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_buttons.self.map" for 127.0.0.1 at 2017-08-08 19:57:27 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/history_list.self.map" for 127.0.0.1 at 2017-08-08 19:57:27 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_button.self.map" for 127.0.0.1 at 2017-08-08 19:57:27 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/layout.self.map" for 127.0.0.1 at 2017-08-08 19:57:27 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/navbar.self.map" for 127.0.0.1 at 2017-08-08 19:57:27 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/sprinkle_list.self.map" for 127.0.0.1 at 2017-08-08 19:57:27 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/system_host.self.map" for 127.0.0.1 at 2017-08-08 19:57:28 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/hyperloop-loader-application.self.map" for 127.0.0.1 at 2017-08-08 19:57:28 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/system_state.self.map" for 127.0.0.1 at 2017-08-08 19:57:28 -0700
-  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[35m (214.9ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
-  [1m[35m (322.9ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
-  [1m[35m (171.0ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
-  [1m[35m (279.1ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
-Started GET "/" for 127.0.0.1 at 2017-08-08 19:59:41 -0700
-Processing by HyperloopController#app as HTML
-  Rendering inline template within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPorter Load (0.2ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` ORDER BY `porters`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `porters` (`host_name`, `port_number`, `created_at`, `updated_at`) VALUES ('narbonne', '8083', '2017-08-12 19:28:21', '2017-08-12 19:28:21')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `hyperloop_connections`.`channel` FROM `hyperloop_connections`[0m
+  [1m[36mHyperloop::Connection::QueuedMessage Load (0.6ms)[0m  [1m[34mSELECT  `hyperloop_queued_messages`.* FROM `hyperloop_queued_messages` WHERE `hyperloop_queued_messages`.`connection_id` = 0 LIMIT 1[0m
+  [1m[36mHyperloop::Connection::QueuedMessage Load (0.4ms)[0m  [1m[34mSELECT  `hyperloop_queued_messages`.* FROM `hyperloop_queued_messages` WHERE `hyperloop_queued_messages`.`connection_id` = 0 LIMIT 1[0m
+  [1m[36mHyperloop::Connection::QueuedMessage Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_queued_messages`.* FROM `hyperloop_queued_messages` WHERE `hyperloop_queued_messages`.`connection_id` = 0 LIMIT 1[0m
+Started POST "/hyperloop/execute_remote_api" for 127.0.0.1 at 2017-08-12 12:28:21 -0700
+Processing by Hyperloop::HyperloopController#execute_remote_api as */*
+  Parameters: {"operation"=>"ReactiveRecord::Broadcast::SendPacket", "params"=>{"broadcast_id"=>"110953740-1502566101.7597525", "channels"=>["Hyperloop::Application"], "klass"=>"Porter", "channel"=>"Hyperloop::Application", "record"=>{"id"=>1, "host_name"=>"narbonne", "port_number"=>"8083", "created_at"=>"2017-08-12T19:28:21.000Z", "updated_at"=>"2017-08-12T19:28:21.000Z"}, "previous_changes"=>{"id"=>[1], "host_name"=>["narbonne"], "port_number"=>["8083"], "created_at"=>["2017-08-12T19:28:21.000Z"], "updated_at"=>["2017-08-12T19:28:21.000Z"]}, "operation"=>"create", "salt"=>"4f314c09e20bf0100710f61dd263687a", "authorization"=>"4dd6ddc0df0f94ea2d023a370be55ac197ff6a53"}, "hyperloop"=>{"operation"=>"ReactiveRecord::Broadcast::SendPacket", "params"=>{"broadcast_id"=>"110953740-1502566101.7597525", "channels"=>["Hyperloop::Application"], "klass"=>"Porter", "channel"=>"Hyperloop::Application", "record"=>{"id"=>1, "host_name"=>"narbonne", "port_number"=>"8083", "created_at"=>"2017-08-12T19:28:21.000Z", "updated_at"=>"2017-08-12T19:28:21.000Z"}, "previous_changes"=>{"id"=>[1], "host_name"=>["narbonne"], "port_number"=>["8083"], "created_at"=>["2017-08-12T19:28:21.000Z"], "updated_at"=>["2017-08-12T19:28:21.000Z"]}, "operation"=>"create", "salt"=>"4f314c09e20bf0100710f61dd263687a", "authorization"=>"4dd6ddc0df0f94ea2d023a370be55ac197ff6a53"}}}
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND (session IS NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_queued_messages` (`data`, `connection_id`) VALUES ('---\n- :dispatch\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n  channel: Hyperloop::Application\n  operation: ReactiveRecord::Broadcast::SendPacket\n  params: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n    operation: create\n    broadcast_id: 110953740-1502566101.7597525\n    channel: Hyperloop::Application\n    channels:\n    - Hyperloop::Application\n    klass: Porter\n    record: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id: 1\n      host_name: narbonne\n      port_number: \'8083\'\n      created_at: \'2017-08-12T19:28:21.000Z\'\n      updated_at: \'2017-08-12T19:28:21.000Z\'\n    previous_changes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id:\n      - 1\n      host_name:\n      - narbonne\n      port_number:\n      - \'8083\'\n      created_at:\n      - \'2017-08-12T19:28:21.000Z\'\n      updated_at:\n      - \'2017-08-12T19:28:21.000Z\'\n    authorization: 4dd6ddc0df0f94ea2d023a370be55ac197ff6a53\n    salt: 4f314c09e20bf0100710f61dd263687a\n', 1)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_queued_messages` (`data`, `connection_id`) VALUES ('---\n- :dispatch\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n  channel: Hyperloop::Application\n  operation: ReactiveRecord::Broadcast::SendPacket\n  params: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n    operation: create\n    broadcast_id: 110953740-1502566101.7597525\n    channel: Hyperloop::Application\n    channels:\n    - Hyperloop::Application\n    klass: Porter\n    record: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id: 1\n      host_name: narbonne\n      port_number: \'8083\'\n      created_at: \'2017-08-12T19:28:21.000Z\'\n      updated_at: \'2017-08-12T19:28:21.000Z\'\n    previous_changes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id:\n      - 1\n      host_name:\n      - narbonne\n      port_number:\n      - \'8083\'\n      created_at:\n      - \'2017-08-12T19:28:21.000Z\'\n      updated_at:\n      - \'2017-08-12T19:28:21.000Z\'\n    authorization: 4dd6ddc0df0f94ea2d023a370be55ac197ff6a53\n    salt: 4f314c09e20bf0100710f61dd263687a\n', 2)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_queued_messages` (`data`, `connection_id`) VALUES ('---\n- :dispatch\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n  channel: Hyperloop::Application\n  operation: ReactiveRecord::Broadcast::SendPacket\n  params: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n    operation: create\n    broadcast_id: 110953740-1502566101.7597525\n    channel: Hyperloop::Application\n    channels:\n    - Hyperloop::Application\n    klass: Porter\n    record: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id: 1\n      host_name: narbonne\n      port_number: \'8083\'\n      created_at: \'2017-08-12T19:28:21.000Z\'\n      updated_at: \'2017-08-12T19:28:21.000Z\'\n    previous_changes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id:\n      - 1\n      host_name:\n      - narbonne\n      port_number:\n      - \'8083\'\n      created_at:\n      - \'2017-08-12T19:28:21.000Z\'\n      updated_at:\n      - \'2017-08-12T19:28:21.000Z\'\n    authorization: 4dd6ddc0df0f94ea2d023a370be55ac197ff6a53\n    salt: 4f314c09e20bf0100710f61dd263687a\n', 3)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_queued_messages` (`data`, `connection_id`) VALUES ('---\n- :dispatch\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n  channel: Hyperloop::Application\n  operation: ReactiveRecord::Broadcast::SendPacket\n  params: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n    operation: create\n    broadcast_id: 110953740-1502566101.7597525\n    channel: Hyperloop::Application\n    channels:\n    - Hyperloop::Application\n    klass: Porter\n    record: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id: 1\n      host_name: narbonne\n      port_number: \'8083\'\n      created_at: \'2017-08-12T19:28:21.000Z\'\n      updated_at: \'2017-08-12T19:28:21.000Z\'\n    previous_changes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id:\n      - 1\n      host_name:\n      - narbonne\n      port_number:\n      - \'8083\'\n      created_at:\n      - \'2017-08-12T19:28:21.000Z\'\n      updated_at:\n      - \'2017-08-12T19:28:21.000Z\'\n    authorization: 4dd6ddc0df0f94ea2d023a370be55ac197ff6a53\n    salt: 4f314c09e20bf0100710f61dd263687a\n', 4)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_queued_messages` (`data`, `connection_id`) VALUES ('---\n- :dispatch\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n  channel: Hyperloop::Application\n  operation: ReactiveRecord::Broadcast::SendPacket\n  params: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n    operation: create\n    broadcast_id: 110953740-1502566101.7597525\n    channel: Hyperloop::Application\n    channels:\n    - Hyperloop::Application\n    klass: Porter\n    record: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id: 1\n      host_name: narbonne\n      port_number: \'8083\'\n      created_at: \'2017-08-12T19:28:21.000Z\'\n      updated_at: \'2017-08-12T19:28:21.000Z\'\n    previous_changes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id:\n      - 1\n      host_name:\n      - narbonne\n      port_number:\n      - \'8083\'\n      created_at:\n      - \'2017-08-12T19:28:21.000Z\'\n      updated_at:\n      - \'2017-08-12T19:28:21.000Z\'\n    authorization: 4dd6ddc0df0f94ea2d023a370be55ac197ff6a53\n    salt: 4f314c09e20bf0100710f61dd263687a\n', 5)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_queued_messages` (`data`, `connection_id`) VALUES ('---\n- :dispatch\n- !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n  channel: Hyperloop::Application\n  operation: ReactiveRecord::Broadcast::SendPacket\n  params: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n    operation: create\n    broadcast_id: 110953740-1502566101.7597525\n    channel: Hyperloop::Application\n    channels:\n    - Hyperloop::Application\n    klass: Porter\n    record: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id: 1\n      host_name: narbonne\n      port_number: \'8083\'\n      created_at: \'2017-08-12T19:28:21.000Z\'\n      updated_at: \'2017-08-12T19:28:21.000Z\'\n    previous_changes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess\n      id:\n      - 1\n      host_name:\n      - narbonne\n      port_number:\n      - \'8083\'\n      created_at:\n      - \'2017-08-12T19:28:21.000Z\'\n      updated_at:\n      - \'2017-08-12T19:28:21.000Z\'\n    authorization: 4dd6ddc0df0f94ea2d023a370be55ac197ff6a53\n    salt: 4f314c09e20bf0100710f61dd263687a\n', 6)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHyperloop::Connection Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` IS NULL LIMIT 1[0m
+Completed 200 OK in 121ms (Views: 0.4ms | ActiveRecord: 17.0ms)
+
+
+  [1m[36mPorter Load (0.6ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` ORDER BY `porters`.`id` ASC LIMIT 1[0m
+  [1m[36mPorter Load (0.6ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` ORDER BY `porters`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (11.6ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
+  [1m[35m (17.4ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (6.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
+Started GET "/" for 127.0.0.1 at 2017-08-12 12:30:19 -0700
   [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
-  [1m[36mHyperloop::Connection Load (0.4ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'cd7eb852-161b-4582-940c-eae7af89a244-92fbcac00658cf4ac87ae0371a76e301' LIMIT 1[0m
-  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
-  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'cd7eb852-161b-4582-940c-eae7af89a244-92fbcac00658cf4ac87ae0371a76e301', '2017-08-09 02:59:43', '2017-08-09 02:59:53')[0m
-  [1m[35m (50.3ms)[0m  [1m[35mCOMMIT[0m
-  Rendered inline template within layouts/application (2220.8ms)
-Completed 200 OK in 4157ms (Views: 4096.2ms | ActiveRecord: 53.5ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.2ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mPorter Load (0.2ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` WHERE `porters`.`id` = 1 LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'fc8e31c1-893f-421b-b2b1-33c9c31cef15-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'fc8e31c1-893f-421b-b2b1-33c9c31cef15-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-12 19:30:21', '2017-08-12 19:30:31')[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1972.1ms)
+Completed 200 OK in 3783ms (Views: 3767.3ms | ActiveRecord: 9.8ms)
 
 
-Started GET "/__OPAL_SOURCE_MAPS__/components/app.self.map" for 127.0.0.1 at 2017-08-08 19:59:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/layout.self.map" for 127.0.0.1 at 2017-08-08 19:59:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_buttons.self.map" for 127.0.0.1 at 2017-08-08 19:59:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/history_list.self.map" for 127.0.0.1 at 2017-08-08 19:59:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/valve_button.self.map" for 127.0.0.1 at 2017-08-08 19:59:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/navbar.self.map" for 127.0.0.1 at 2017-08-08 19:59:45 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/sprinkle_list.self.map" for 127.0.0.1 at 2017-08-08 19:59:46 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/system_host.self.map" for 127.0.0.1 at 2017-08-08 19:59:46 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/hyperloop-loader-application.self.map" for 127.0.0.1 at 2017-08-08 19:59:46 -0700
-Started GET "/__OPAL_SOURCE_MAPS__/components/system_state.self.map" for 127.0.0.1 at 2017-08-08 19:59:46 -0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (7.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (5.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
+Started GET "/" for 127.0.0.1 at 2017-08-13 07:53:17 -0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.2ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` WHERE `porters`.`id` = 1 LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '401078ae-5b1b-412c-81f3-528194651beb-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '401078ae-5b1b-412c-81f3-528194651beb-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-13 14:53:19', '2017-08-13 14:53:29')[0m
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1992.5ms)
+Completed 200 OK in 3822ms (Views: 3803.5ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 08:59:39 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` WHERE `porters`.`id` = 1 LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.4ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '25963fb9-3525-4efb-b500-24418fc21e07-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '25963fb9-3525-4efb-b500-24418fc21e07-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-13 15:59:50', '2017-08-13 16:00:00')[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1080.8ms)
+Completed 200 OK in 1713ms (Views: 1706.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/__OPAL_SOURCE_MAPS__/models/application_record.self.map" for 127.0.0.1 at 2017-08-13 09:00:16 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/operations/porter_server_actions.self.map" for 127.0.0.1 at 2017-08-13 09:00:16 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/models/porter.self.map" for 127.0.0.1 at 2017-08-13 09:00:16 -0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.9ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (5.8ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
+Started GET "/" for 127.0.0.1 at 2017-08-13 09:08:02 -0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` WHERE `porters`.`id` = 1 LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'c50cf1e8-e000-4b26-85c7-3838c7445ed5-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'c50cf1e8-e000-4b26-85c7-3838c7445ed5-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-13 16:08:04', '2017-08-13 16:08:14')[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1973.8ms)
+Completed 200 OK in 3782ms (Views: 3767.9ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/__OPAL_SOURCE_MAPS__/models/application_record.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/models/porter.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/operations/porter_server_actions.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/components/valve_buttons.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/components/history_list.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/components/valve_button.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/components/sprinkle_list.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/components/layout.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/components/porter_status.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/components/navbar.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/components/water_status.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/hyperloop-loader-application.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/components/app.self.map" for 127.0.0.1 at 2017-08-13 09:08:07 -0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPorter Load (0.2ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` ORDER BY `porters`.`id` ASC LIMIT 1[0m
+Started GET "/" for 127.0.0.1 at 2017-08-13 09:14:51 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mHyperloop::Connection Load (0.5ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '2b585323-21df-4de5-bd14-31f76dceabdd-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '2b585323-21df-4de5-bd14-31f76dceabdd-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-13 16:15:03', '2017-08-13 16:15:13')[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1328.0ms)
+Completed 200 OK in 1984ms (Views: 1979.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 09:15:24 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.2ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` WHERE `porters`.`id` = 1 LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'dec2b918-aee0-4c53-9041-e29fd85022b8-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'dec2b918-aee0-4c53-9041-e29fd85022b8-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-13 16:15:25', '2017-08-13 16:15:35')[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1158.1ms)
+Completed 200 OK in 1844ms (Views: 1837.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 09:16:06 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'a25f04b9-867c-4139-914d-6d2585b3d8ee-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'a25f04b9-867c-4139-914d-6d2585b3d8ee-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-13 16:16:08', '2017-08-13 16:16:18')[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1264.8ms)
+Completed 200 OK in 1983ms (Views: 1974.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 09:35:24 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` WHERE `porters`.`id` = 1 LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = 'be5a2c1b-c1c1-4de0-b1d5-ca45f3d3eb32-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', 'be5a2c1b-c1c1-4de0-b1d5-ca45f3d3eb32-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-13 16:35:26', '2017-08-13 16:35:36')[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1497.7ms)
+Completed 200 OK in 2192ms (Views: 2185.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 09:36:44 -0700
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` WHERE `porters`.`id` = 1 LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '1cb69ba6-b728-479c-98f2-39ad828c9a36-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '1cb69ba6-b728-479c-98f2-39ad828c9a36-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-13 16:36:45', '2017-08-13 16:36:55')[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (1163.6ms)
+Completed 200 OK in 1866ms (Views: 1859.1ms | ActiveRecord: 6.5ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (8.0ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_connections`[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE `hyperloop_connections` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `channel` varchar(255), `session` varchar(255), `created_at` datetime, `expires_at` datetime, `refresh_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (5.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `hyperloop_queued_messages`[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE `hyperloop_queued_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `data` text, `connection_id` int) ENGINE=InnoDB[0m
+Started GET "/" for 127.0.0.1 at 2017-08-13 09:46:10 -0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HyperloopController#app as HTML
+  Rendering inline template within layouts/application
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT `porters`.* FROM `porters`[0m
+  [1m[36mPorter Load (0.3ms)[0m  [1m[34mSELECT  `porters`.* FROM `porters` WHERE `porters`.`id` = 1 LIMIT 1[0m
+  [1m[36mHyperloop::Connection Load (0.3ms)[0m  [1m[34mSELECT  `hyperloop_connections`.* FROM `hyperloop_connections` WHERE `hyperloop_connections`.`channel` = 'Hyperloop::Application' AND `hyperloop_connections`.`session` = '3b953ff3-5c5a-49c4-88ee-8abdb9a156a2-4a856be6408f22e4aa28dfdc411d9f43' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `hyperloop_connections` (`channel`, `session`, `created_at`, `expires_at`) VALUES ('Hyperloop::Application', '3b953ff3-5c5a-49c4-88ee-8abdb9a156a2-4a856be6408f22e4aa28dfdc411d9f43', '2017-08-13 16:46:12', '2017-08-13 16:46:22')[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendered inline template within layouts/application (2024.6ms)
+Completed 200 OK in 3848ms (Views: 3834.3ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/__OPAL_SOURCE_MAPS__/models/application_record.self.map" for 127.0.0.1 at 2017-08-13 09:46:41 -0700
+Started GET "/__OPAL_SOURCE_MAPS__/models/porter.self.map" for 127.0.0.1 at 2017-08-13 09:46:41 -0700

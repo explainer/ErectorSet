@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Host name:
+  = @porter.host_name
+%p
+  %b Port number:
+  = @porter.port_number
+
+= link_to 'Edit', edit_porter_path(@porter)
+\|
+= link_to 'Back', porters_path

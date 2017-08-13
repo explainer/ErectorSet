@@ -33,8 +33,8 @@
     def render
       NAV(class: 'navbar navbar-default') do
         DIV(class: 'container-fluid') do
-          PorterState {}
-          WaterState {}
+          PorterStatus {}
+          WaterStatus {}
           ValveButtons {}
         end
       end

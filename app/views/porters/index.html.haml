@@ -1,0 +1,23 @@
+%h1 Listing porters
+
+%table
+  %thead
+    %tr
+      %th Host name
+      %th Port number
+      %th
+      %th
+      %th
+
+  %tbody
+    - @porters.each do |porter|
+      %tr
+        %td= porter.host_name
+        %td= porter.port_number
+        %td= link_to 'Show', porter
+        %td= link_to 'Edit', edit_porter_path(porter)
+        %td= link_to 'Destroy', porter, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Porter', new_porter_path

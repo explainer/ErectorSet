@@ -1,0 +1,16 @@
+= form_for @porter do |f|
+  - if @porter.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@porter.errors.count, "error")} prohibited this porter from being saved:"
+      %ul
+        - @porter.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :host_name
+    = f.text_field :host_name
+  .field
+    = f.label :port_number
+    = f.text_field :port_number
+  .actions
+    = f.submit 'Save'
